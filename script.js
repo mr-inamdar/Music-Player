@@ -195,7 +195,7 @@ playlist.addEventListener("wheel", function(e) {
     }
     setTimeout(() => {
         bool = false;
-    }, 20000);
+    }, 10000);
 });
 
 let touchStartY = 0;
@@ -212,7 +212,7 @@ playlist.addEventListener('touchmove', function(e) {
     }
     setTimeout(() => {
         bool = false;
-    }, 20000);
+    }, 10000);
 });
 
 // playlist.addEventListener('mousescroll', scroll_songs);
