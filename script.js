@@ -195,14 +195,22 @@ playlist.addEventListener("wheel", function(e) {
         bool = false;
     }, 10000);
 });
-playlist.addEventListener("touchmove",()=>{
-    if (!bool) {
+playlist.addEventListener("touchstart",()=>{
+    if(!bool){
         bool = true;
-        playlist.addEventListener("touchstart",scroll_songs_down());
-
-        playlist.addEventListener("touchend", scroll_songs_up());
+        scroll_songs_down()
     }
     setTimeout(() => {
          bool = false;
     }, 20000);
 });
+playlist.addEventListener("touchend", ()=>{
+    if(!bool){
+        bool = true;
+        scroll_songs_up()
+    }
+    setTimeout(() => {
+         bool = false;
+    }, 20000);
+});
+    
