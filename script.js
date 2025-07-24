@@ -212,8 +212,5 @@ playlist.addEventListener('touchmove', function(e) {
     }
     setTimeout(() => {
         bool = false;
-    }, 10000);
+    }, 20000);
 });
-
-// playlist.addEventListener('mousescroll', scroll_songs);
-// setInterval(scroll_songs_up, 10000);
