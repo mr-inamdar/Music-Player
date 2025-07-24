@@ -195,21 +195,14 @@ playlist.addEventListener("wheel", function(e) {
         bool = false;
     }, 10000);
 });
-
-let touchStartY = 0;
-
-playlist.addEventListener('touchmove', function(e) {
-    let touchEndY = e.touches[0].clientY;
-    let deltaY = touchStartY - touchEndY;
+playlist.addEventListener("touchmove",()=>{
     if (!bool) {
         bool = true;
-        if (deltaY > 10) {
-            scroll_songs_up();
-        } else if (deltaY < -10) {
-            scroll_songs_down();
-        }
+        playlist.addEventListener("touchstart",scroll_songs_down());
+
+        playlist.addEventListener("touchend", scroll_songs_up());
     }
     setTimeout(() => {
-        bool = false;
+         bool = false;
     }, 20000);
 });
