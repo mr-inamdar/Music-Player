@@ -186,10 +186,8 @@ playlist.addEventListener("wheel", function(e) {
     if (!bool) {
         bool = true;
         if (e.deltaY > 0) {
-            console.log("scroll up")
             scroll_songs_up();       
-        } else {
-            console.log("scroll down")
+        } else{
             scroll_songs_down();
         }
     }
@@ -213,5 +211,5 @@ playlist.addEventListener('touchmove', function(e) {
     }
     setTimeout(() => {
         bool = false;
-    }, 10000);
+    }, 20000);
 });   
