@@ -195,7 +195,7 @@ playlist.addEventListener("wheel", function(e) {
     }
     setTimeout(() => {
         bool = false;
-    }, 20000);
+    }, 10000);
 });
 
 let touchStartY = 0;
@@ -204,6 +204,7 @@ playlist.addEventListener('touchmove', function(e) {
     let touchEndY = e.touches[0].clientY;
     let deltaY = touchStartY - touchEndY;
     if (!bool) {
+        bool = true;
         if (deltaY > 10) {
             scroll_songs_up();
         } else if (deltaY < -10) {
@@ -212,5 +213,5 @@ playlist.addEventListener('touchmove', function(e) {
     }
     setTimeout(() => {
         bool = false;
-    }, 20000);
+    }, 10000);
 });   
