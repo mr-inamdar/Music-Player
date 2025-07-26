@@ -213,27 +213,4 @@ playlist.addEventListener('touchmove', function(e) {
     setTimeout(() => {
         bool = false;
     }, 20000);
-});
-
-// playlist.addEventListener('mousescroll', scroll_songs);
-// setInterval(scroll_songs_up, 10000);
-
-// playlist.addEventListener("touchstart",()=>{
-//     if(!bool){
-//         bool = true;
-//         scroll_songs_down()
-//     }
-//     setTimeout(() => {
-//          bool = false;
-//     }, 20000);
-// });
-// playlist.addEventListener("touchend", ()=>{
-//     if(!bool){
-//         bool = true;
-//         scroll_songs_up()
-//     }
-//     setTimeout(() => {
-//          bool = false;
-//     }, 20000);
-// });
-    
+});   
