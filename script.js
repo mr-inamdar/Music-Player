@@ -13,7 +13,7 @@ let songs = [
     {name: "Jugraafiya", filePath: "songs/5.mp3", coverPath: "covers/5.jpg", time: "04:38"},
     {name: "Shiddat Titel Track", filePath: "songs/6.mp3", coverPath: "covers/6.jpeg", time: "04:03"},
     {name: "Dil Ibadat", filePath: "songs/7.mp3", coverPath: "covers/7.jpeg", time: "05:54"},
-    {name: "Kahani sono 2.0", filePath: "songs/8.mp3", coverPath: "covers/8.jpeg", time: "02:53"},
+    {name: "Elahi", filePath: "songs/8.mp3", coverPath: "covers/8.jpg", time: "03:32"},
     {name: "Kabhi Kabhi Aditi", filePath: "songs/9.mp3", coverPath: "covers/9.jpeg", time: "03:38"},
     {name: "Main parinda ho", filePath: "songs/10.mp3", coverPath: "covers/10.jpeg", time: "04:48"}
 ];
@@ -213,3 +213,4 @@ playlist.addEventListener('touchmove', function(e) {
         bool = false;
     }, 20000);
 });   
+
